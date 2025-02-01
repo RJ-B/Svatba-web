@@ -9710,9 +9710,19 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .bg-gallery {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery/spolecna.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url(../img/gallery/spolecna.jpg) no-repeat center center;
   background-size: cover;
 }
+
+@media (max-width: 768px) {
+  .bg-gallery {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(../img/gallery/spolecnamobil.jpg) no-repeat center center;
+    background-size: cover;
+  }
+}
+
 
 .gallery-carousel .owl-nav {
   position: absolute;
