@@ -9709,27 +9709,8 @@ a.text-dark:hover, a.text-dark:focus {
   transform: scale(1.2);
 }
 
-.gallery-item a {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #FFFFFF;
-  text-decoration: none;
-  transition: .5s;
-  opacity: 0;
-}
-
-.gallery-item:hover a {
-  opacity: 1;
-}
-
 .bg-gallery {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/gallery/spolecna.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -9779,7 +9760,6 @@ a.text-dark:hover, a.text-dark:focus {
   height: 300px; /* Výška obrázku */
   object-fit: cover; /* Ořízne obrázek tak, aby vyplnil prostor */
   object-position: center; /* Zarovná obrázek na střed */
-  border-radius: 10px; /* Volitelně: zakulacení rohů */
 }
 
 .text-box {
@@ -9793,3 +9773,28 @@ a.text-dark:hover, a.text-dark:focus {
   overflow: hidden; /* Skryje přetékající obsah */
 }
 
+.gallery-item {
+  padding: 0 10px; /* Mezera mezi obrázky */
+  overflow: hidden; /* Skryje části obrázku, které přesahují */
+  position: relative; /* Umožní správnou manipulaci s obsahem */
+}
+
+.gallery-img {
+  width: 100%; /* Obrázek zabírá celou šířku rodičovského kontejneru */
+  height: 450px; /* Pevná výška obrázku */
+  object-fit: cover; /* Zachování proporcí a vyplnění prostoru */
+  transition: transform 0.4s ease-in-out; /* Plynulý efekt */
+}
+
+.gallery-item:hover .gallery-img {
+  transform: scale(1.2); /* Přiblížení obrázku */
+}
+
+
+@media (max-width: 768px) {
+  .text-box-harmonogram {
+    width: 330px;
+    margin: 0 auto; /* Vycentrování horizontálně */
+    text-align: center; /* Zarovná text do středu */
+  }
+}

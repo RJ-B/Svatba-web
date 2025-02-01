@@ -56,46 +56,26 @@
     <!-- Navbar End -->
 
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 pb-5" id="home">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carusel1.jpeg" style="object-fit: cover;">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Rosťa  &  Viki</h1>
-                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Budeme se brát</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carusel2.jpg" style="object-fit: cover;">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Rosťa  &  Viki</h1>
-                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Budeme se brát</h3>
-                            </div>
+<!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5 pb-5" id="home">
+    <div id="header-carousel" class="carousel slide" data-ride="false"> <!-- Zrušeno automatické přepínání -->
+        <div class="carousel-inner">
+            <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                <img class="position-absolute w-100 h-100" src="img/carusel1.jpeg" style="object-fit: cover;">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Rosťa & Viki</h1>
+                        <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                            <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">Budeme se brát</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
-                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
-                    <span class="carousel-control-prev-icon mt-3"></span>
-                </div>
-            </a>
-            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
-                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
-                    <span class="carousel-control-next-icon mt-3"></span>
-                </div>
-            </a>
         </div>
     </div>
-    <!-- Carousel End -->  
+</div>
+<!-- Carousel End -->
+
 
     <!-- Event Start -->
     <div class="container-fluid py-5" id="event">
@@ -143,109 +123,202 @@
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="container timeline position-relative p-0">
-                <div class="row">
+    
+                <div class="row d-flex flex-column-reverse flex-md-row">
                     <div class="col-md-6 text-center text-md-right">
                         <img class="img-fluid mr-md-3 cropped-image" src="img/yard1.png" alt="">
                     </div>
-                    <div class="col-md-6 text-center text-md-left">
+                    <div class="col-md-6 text-center text-md-left text-box-harmonogram">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">Sraz</h4>
-                            <p class="text-uppercase mb-2">10:00</p>
+                            <p class="text-uppercase mb-2">11:00</p>
                             <p class="m-0"><strong>Místo:</strong> Yard Resort</p>
                             <p class="m-0"><strong>Adresa:</strong> Ke Tvrzi 7, 250 72 Předboj</p>
-                            <p class="m-0"><strong>Datum:</strong>28.6.2025</p>
+                            <p class="m-0"><strong>Datum:</strong> 28.6.2025</p>
                         </div>
-                    </div>                                        
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
+    
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col-md-6 text-center text-md-right text-box-harmonogram">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
                             <h4 class="mb-2">Obřad</h4>
-                            <p class="text-uppercase mb-2">11:30</p>
-                            <p class="m-0">Obřad proběhne pod širým nebem v zahradě.</p>
+                            <p class="text-uppercase mb-2">12:00</p>
+                            <p class="m-0">Řekneme si své „ano“ pod širým nebem v krásné zahradě.</p>
                         </div>
-                    </div>                    
+                    </div>
                     <div class="col-md-6 text-center text-md-left">
                         <img class="img-fluid ml-md-3 cropped-image" src="img/obrad.jpg" alt="">
                     </div>
                 </div>
-                <div class="row">
+    
+                <div class="row d-flex flex-column-reverse flex-md-row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3 cropped-image" src="img/program/group-photo.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left text-box-harmonogram">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Gratulace a hromadné focení</h4>
+                            <p class="text-uppercase mb-2">12:30</p>
+                            <p class="m-0">Po obřadu následují gratulace a společné focení na památku.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col-md-6 text-center text-md-right text-box-harmonogram">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Přesun před sýpku</h4>
+                            <p class="text-uppercase mb-2">13:15</p>
+                            <p class="m-0">Přemístíme se před sýpku, kde proběhne slavnostní uvítání, tradiční rozbití talířku pro štěstí a symbolický přípitek voda/vodka.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3 cropped-image" src="img/obrad.jpg" alt="">
+                    </div>
+                </div>
+    
+                <div class="row d-flex flex-column-reverse flex-md-row">
                     <div class="col-md-6 text-center text-md-right">
                         <img class="img-fluid mr-md-3 cropped-image" src="img/obed1.jpg" alt="">
                     </div>
-                    <div class="col-md-6 text-center text-md-left">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3 ">
+                    <div class="col-md-6 text-center text-md-left text-box-harmonogram">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">Oběd</h4>
-                            <p class="text-uppercase mb-2">13:00</p>
-                            <p class="m-0">Po obřadu vás zveme na slavnostní oběd, který se bude podávat v restauraci Yard Resort.</p>
+                            <p class="text-uppercase mb-2">13:30</p>
+                            <p class="m-0">Společně si vychutnáme svatební polévku, poté nás čeká celodenní raut.</p>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-right">
+    
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col-md-6 text-center text-md-right text-box-harmonogram">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
-                            <h4 class="mb-2">Párty</h4>
-                            <p class="text-uppercase mb-2">17:00</p>
-                            <p class="m-0">Párty</p>
+                            <h4 class="mb-2">Focení novomanželů a ubytování hostů</h4>
+                            <p class="text-uppercase mb-2">15:00</p>
+                            <p class="m-0">Novomanželé se odeberou na individuální focení, zatímco hosté se mohou ubytovat.</p>
+                            <p class="mt-2">
+                                <a href="https://www.yardresort.com/index.php/fotogalerie/ubytovani.html" 
+                                   class="text-dark font-weight-bold" target="_blank" rel="noopener">
+                                    Prohlédnout fotky ubytování
+                                </a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="">
+                        <img class="img-fluid ml-md-3 cropped-image" src="img/program/photo-novomanzele.jpg" alt="">
                     </div>
                 </div>
+    
+                <div class="row d-flex flex-column-reverse flex-md-row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3 cropped-image" src="img/program/cake.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left text-box-harmonogram">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Svatební dort</h4>
+                            <p class="text-uppercase mb-2">16:00</p>
+                            <p class="m-0">Slavnostně rozkrojíme náš svatební dort a osladíme si den.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col-md-6 text-center text-md-right text-box-harmonogram">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Volná zábava</h4>
+                            <p class="text-uppercase mb-2">18:00</p>
+                            <p class="m-0">Začíná párty! Hudba, tanec a skvělá atmosféra až do ranních hodin.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3 cropped-image" src="img/program/party.jpeg" alt="">
+                    </div>
+                </div>
+    
             </div>
         </div>
-    </div>
+    </div>    
     <!-- Story End -->
 
 
-    <!-- Gallery Start -->
-    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
-        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gallery</h6>
-            <h1 class="font-secondary display-4 text-white">Our Photo Gallery</h1>
-            <i class="far fa-heart text-white"></i>
-        </div>
-        <div class="owl-carousel gallery-carousel">
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
-                <a href="img/gallery-1.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
-                <a href="img/gallery-2.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
-                <a href="img/gallery-3.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
-                <a href="img/gallery-4.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
-                <a href="img/gallery-5.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
-                <a href="img/gallery-6.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-        </div>
+<!-- Gallery Start -->
+<div class="container-fluid bg-gallery" id="gallery" style="padding: 300px 0; margin: 90px 0;">
+    <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galerie</h6>
+        <h1 class="font-secondary display-4 text-white">Naše společné fotky</h1>
+        <i class="far fa-heart text-white"></i>
     </div>
-    <!-- Gallery End -->
+    <div class="owl-carousel gallery-carousel">
+        <div class="gallery-item">
+            <a href="img/gallery/gallery1.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery1.jpg" alt="Galerie 1">
+            </a>
+        </div>        
+        <div class="gallery-item">
+            <a href="img/gallery/gallery2.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery2.jpg" alt="Galerie 2">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery3.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery3.jpg" alt="Galerie 3">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery4.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery4.jpg" alt="Galerie 4">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery5.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery5.jpg" alt="Galerie 5">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery6.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery6.jpg" alt="Galerie 6">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery7.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery7.jpg" alt="Galerie 7">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery8.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery8.jpg" alt="Galerie 8">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery9.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery9.jpg" alt="Galerie 9">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery10.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery10.jpg" alt="Galerie 10">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery11.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery11.jpg" alt="Galerie 11">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery12.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery12.jpg" alt="Galerie 12">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="img/gallery/gallery13.jpg" data-lightbox="gallery">
+                <img class="gallery-img" src="img/gallery/gallery13.jpg" alt="Galerie 13">
+            </a>
+        </div>
+    </div>    
+</div>
+<!-- Gallery End -->
+
 
 
 
@@ -270,7 +343,7 @@
                             <div class="form-row">
                                 <div class="form-group col-sm-6">
                                     <input type="text" class="form-control bg-secondary border-0 py-4 px-3" 
-                                           id="gname" name="user_name" placeholder="Jméno a příjmení" required>
+                                           id="gname" name="user_name" required>
                                 </div>
                                 <div class="form-group col-sm-6">
                                     <select class="form-control bg-secondary border-0" 
@@ -286,14 +359,14 @@
                                     <select class="form-control bg-secondary border-0" 
                                             style="height: 52px;" id="accommodation" name="user_accommodation" required>
                                         <option value="" disabled selected>Ubytování</option>
-                                        <option value="Chci si zaplatit">Chci si zaplatit</option>
+                                        <option value="Chci si zaplatit">Chci si zaplatit pokoj</option>
                                         <option value="Nechci">Nechci</option>
                                     </select>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" 
-                                          id="message" name="user_message" placeholder="Zpráva"></textarea>
+                                          id="message" name="user_message"></textarea>
                             </div>
                             <div>
                                 <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Poslat</button>
