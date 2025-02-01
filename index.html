@@ -39,12 +39,7 @@
                 <a href="#event" class="nav-item nav-link">Událost</a>
                 <a href="#harmonogram" class="nav-item nav-link">Harmonogram</a>
             </div>
-    
-            <!-- Vycentrovaný název -->
-            <a href="index.html" class="navbar-brand mx-4">
-                <h1 class="font-secondary text-white mb-n2">Rosťa <span class="text-primary">&</span> Viki</h1>
-            </a>
-    
+   
             <div class="navbar-nav">
                 <!-- Pravé odkazy -->
                 <a href="#gallery" class="nav-item nav-link">Galerie</a>
@@ -78,40 +73,75 @@
 
 
     <!-- Event Start -->
-    <div class="container-fluid py-5" id="event">
-        <div class="container py-5">
-            <div class="section-title position-relative text-center">
-                <h1 class="font-secondary display-4">Událost</h1>
-                <i class="far fa-heart text-dark"></i>
+    <div class="container-fluid py-5 bg-white" id="event">
+        <div class="section-title position-relative text-center">
+            <h1 class="font-secondary display-2">Událost</h1>
+            <i class="far fa-heart text-dark"></i>
+        </div>
+        <div class="container py-5 text-center shadow-lg">
+            <!-- Horní text -->
+            <p class="text-uppercase text-muted mb-1">Pozvánka na pivo zdarma!</p>
+            <p class="text-muted mb-4">Mimochodem se slušně oblečte, je to svatba.</p>
+    
+            <!-- Jména -->
+            <h1 class="font-secondary text-gold display-4 mb-1">Viktorie Kořínková</h1>
+            <p class="text-gold font-secondary display-4 my-0">&</p>
+            <h1 class="font-secondary text-gold display-4 mt-1">Rostislav Jirák</h1>
+    
+            <!-- Datum a místo -->
+            <div class="row justify-content-center align-items-center my-5">
+                <!-- Datum -->
+                <div class="col-md-4 text-center border-right">
+                    <p class="text-uppercase text-muted">Červen</p>
+                    <h2 class="font-secondary">28</h2>
+                    <p class="text-uppercase text-muted">2025</p>
+                </div>
+                <!-- Místo -->
+                <div class="col-md-4 text-center">
+                    <h4 class="text-muted mb-2">Yard Resort</h4>
+                    <p class="text-muted mb-0">
+                        <a href="https://www.google.com/maps?q=Yard+Resort,+Ke+Tvrzi+7,+Předboj" 
+                           target="_blank" 
+                           rel="noopener" 
+                           class="text-primary">
+                            Ke Tvrzi 7, Předboj
+                        </a>
+                    </p>
+                </div>
+
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h5 class="font-weight-normal text-muted mb-4">
-                        Všechny části dne - obřad, slavnostní oběd (společná polévka a celodenní raut) i večerní párty - proběhnou na jednom místě, v 
-                        <a href="https://www.yardresort.com/index.php" target="_blank" rel="noopener" class="text-primary"><strong>Yard Resortu</strong></a>. 
-                        Datum události je <strong>28. června 2025</strong>. Veškeré detaily, jako časy jednotlivých částí dne, najdete v sekci 
-                        <a href="#story" class="text-primary">Harmonogram</a>.
-                    </h5>
+            <p class="text-muted mb-4">Prosíme o prohlédnutí trasy!</p>
+
+            <!-- Mapa s místem konání -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.9385938235124!2d14.4708283!3d50.2230898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470be907ab44030d%3A0x925d5e5751c86283!2sYard%20Resort!5e0!3m2!1scs!2scz!4v1707144744033!5m2!1scs!2scz&z=19" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 border-right border-primary">
-                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
-                        <img class="img-fluid mb-4" src="img/event-1.jpg" alt="Obřad">
-                        <h4 class="mb-3">Obřad</h4>
-                        <p class="mb-0">Bude probíhat na nádherném místě v přírodě.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="text-center text-md-left ml-md-3">
-                        <img class="img-fluid mb-4" src="img/event-2.jpg" alt="Párty">
-                        <h4 class="mb-3">Párty</h4>
-                        <p class="mb-0">Celodenní raut a večerní zábava plná radosti.</p>
-                    </div>
+    
+            <!-- Odkaz na trasu -->
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <a href="https://www.google.com/maps/dir/50.2259517,14.4779028/Yard+Resort,+Ke+Tvrzi+7,+250+72+P%C5%99edboj-Kojetice+u+Prahy/@50.2242318,14.4751185,17.58z/data=!4m9!4m8!1m0!1m5!1m1!1s0x470be907ab44030d:0x925d5e5751c86283!2m2!1d14.4758289!2d50.2230406!3e0?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D"
+                       target="_blank"
+                       rel="noopener"
+                       class="btn btn-primary btn-lg mt-3">
+                        Zobrazit trasu na mapě
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    
+    
+    
     
     <!-- Event End -->
 
@@ -119,17 +149,17 @@
     <div class="container-fluid py-5" id="harmonogram">
         <div class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
-                <h1 class="font-secondary display-4">Program</h1>
+                <h1 class="font-secondary display-2">Program</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="container timeline position-relative p-0">
     
-                <div class="row d-flex flex-column-reverse flex-md-row">
+                <div class="row d-flex flex-column-reverse flex-md-row harmonogram-animate">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3 cropped-image" src="img/yard1.png" alt="">
+                        <img class="img-fluid mr-md-3 cropped-image shadow-lg" src="img/yard1.png" alt="">
                     </div>
                     <div class="col-md-6 text-center text-md-left text-box-harmonogram">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3 shadow-lg">
                             <h4 class="mb-2">Sraz</h4>
                             <p class="text-uppercase mb-2">11:00</p>
                             <p class="m-0"><strong>Místo:</strong> Yard Resort</p>
@@ -139,25 +169,25 @@
                     </div>
                 </div>
     
-                <div class="row d-flex flex-column flex-md-row">
+                <div class="row d-flex flex-column flex-md-row harmonogram-animate">
                     <div class="col-md-6 text-center text-md-right text-box-harmonogram">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3 shadow-lg">
                             <h4 class="mb-2">Obřad</h4>
                             <p class="text-uppercase mb-2">12:00</p>
                             <p class="m-0">Řekneme si své „ano“ pod širým nebem v krásné zahradě.</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3 cropped-image" src="img/obrad.jpg" alt="">
+                        <img class="img-fluid ml-md-3 cropped-image shadow-lg" src="img/obrad.jpg" alt="">
                     </div>
                 </div>
     
-                <div class="row d-flex flex-column-reverse flex-md-row">
+                <div class="row d-flex flex-column-reverse flex-md-row harmonogram-animate">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3 cropped-image" src="img/program/group-photo.jpg" alt="">
+                        <img class="img-fluid mr-md-3 cropped-image shadow-lg" src="img/program/group-photo.jpg" alt="">
                     </div>
                     <div class="col-md-6 text-center text-md-left text-box-harmonogram">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3 shadow-lg">
                             <h4 class="mb-2">Gratulace a hromadné focení</h4>
                             <p class="text-uppercase mb-2">12:30</p>
                             <p class="m-0">Po obřadu následují gratulace a společné focení na památku.</p>
@@ -165,25 +195,25 @@
                     </div>
                 </div>
     
-                <div class="row d-flex flex-column flex-md-row">
+                <div class="row d-flex flex-column flex-md-row harmonogram-animate">
                     <div class="col-md-6 text-center text-md-right text-box-harmonogram">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3 shadow-lg">
                             <h4 class="mb-2">Přesun před sýpku</h4>
                             <p class="text-uppercase mb-2">13:15</p>
                             <p class="m-0">Přemístíme se před sýpku, kde proběhne slavnostní uvítání, tradiční rozbití talířku pro štěstí a symbolický přípitek voda/vodka.</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3 cropped-image" src="img/obrad.jpg" alt="">
+                        <img class="img-fluid ml-md-3 cropped-image shadow-lg" src="img/obrad.jpg" alt="">
                     </div>
                 </div>
     
-                <div class="row d-flex flex-column-reverse flex-md-row">
+                <div class="row d-flex flex-column-reverse flex-md-row harmonogram-animate">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3 cropped-image" src="img/obed1.jpg" alt="">
+                        <img class="img-fluid mr-md-3 cropped-image shadow-lg" src="img/obed1.jpg" alt="">
                     </div>
                     <div class="col-md-6 text-center text-md-left text-box-harmonogram">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3 shadow-lg">
                             <h4 class="mb-2">Oběd</h4>
                             <p class="text-uppercase mb-2">13:30</p>
                             <p class="m-0">Společně si vychutnáme svatební polévku, poté nás čeká celodenní raut.</p>
@@ -191,9 +221,9 @@
                     </div>
                 </div>
     
-                <div class="row d-flex flex-column flex-md-row">
+                <div class="row d-flex flex-column flex-md-row harmonogram-animate">
                     <div class="col-md-6 text-center text-md-right text-box-harmonogram">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3 shadow-lg">
                             <h4 class="mb-2">Focení novomanželů a ubytování hostů</h4>
                             <p class="text-uppercase mb-2">15:00</p>
                             <p class="m-0">Novomanželé se odeberou na individuální focení, zatímco hosté se mohou ubytovat.</p>
@@ -206,33 +236,59 @@
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3 cropped-image" src="img/program/photo-novomanzele.jpg" alt="">
+                        <img class="img-fluid ml-md-3 cropped-image shadow-lg" src="img/program/photo-novomanzele.jpg" alt="">
                     </div>
                 </div>
     
-                <div class="row d-flex flex-column-reverse flex-md-row">
+                <div class="row d-flex flex-column-reverse flex-md-row harmonogram-animate">
                     <div class="col-md-6 text-center text-md-right">
-                        <img class="img-fluid mr-md-3 cropped-image" src="img/program/cake.jpg" alt="">
+                        <img class="img-fluid mr-md-3 cropped-image shadow-lg" src="img/program/cake.jpg" alt="">
                     </div>
                     <div class="col-md-6 text-center text-md-left text-box-harmonogram">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3 shadow-lg">
                             <h4 class="mb-2">Svatební dort</h4>
                             <p class="text-uppercase mb-2">16:00</p>
                             <p class="m-0">Slavnostně rozkrojíme náš svatební dort a osladíme si den.</p>
                         </div>
                     </div>
                 </div>
-    
-                <div class="row d-flex flex-column flex-md-row">
+
+                <div class="row d-flex flex-column flex-md-row harmonogram-animate">
                     <div class="col-md-6 text-center text-md-right text-box-harmonogram">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3 shadow-lg">
+                            <h4 class="mb-2">Házení kytice</h4>
+                            <p class="text-uppercase mb-2">17:00</p>
+                            <p class="m-0">Tradiční házení svatební kytice, při kterém zjistíme, kdo bude další na řadě!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3 cropped-image shadow-lg" src="img/program/throw-flowers.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="row d-flex flex-column-reverse flex-md-row harmonogram-animate">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3 cropped-image shadow-lg" src="img/program/dance.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left text-box-harmonogram">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3 shadow-lg">
+                            <h4 class="mb-2">Tanec novomanželů</h4>
+                            <p class="text-uppercase mb-2">17:30</p>
+                            <p class="m-0">První tanec novomanželů zahájí večerní oslavy.</p>
+                        </div>
+                    </div>
+                </div>
+   
+                <div class="row d-flex flex-column flex-md-row harmonogram-animate">
+                    <div class="col-md-6 text-center text-md-right text-box-harmonogram">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3 shadow-lg">
                             <h4 class="mb-2">Volná zábava</h4>
                             <p class="text-uppercase mb-2">18:00</p>
                             <p class="m-0">Začíná párty! Hudba, tanec a skvělá atmosféra až do ranních hodin.</p>
                         </div>
                     </div>
                     <div class="col-md-6 text-center text-md-left">
-                        <img class="img-fluid ml-md-3 cropped-image" src="img/program/party.jpeg" alt="">
+                        <img class="img-fluid ml-md-3 cropped-image shadow-lg" src="img/program/party.jpeg" alt="">
                     </div>
                 </div>
     
@@ -246,7 +302,7 @@
 <div class="container-fluid bg-gallery" id="gallery" style="padding: 300px 0; margin: 90px 0;">
     <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
         <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galerie</h6>
-        <h1 class="font-secondary display-4 text-white">Naše společné fotky</h1>
+        <h1 class="font-secondary display-2 text-white">Naše společné fotky</h1>
         <i class="far fa-heart text-white"></i>
     </div>
     <div class="owl-carousel gallery-carousel">
@@ -329,7 +385,7 @@
     <!-- RSVP Start -->
     <div class="container-fluid py-5" id="rsvp">
         <div class="container py-5">
-            <div class="section-title position-relative text-center">
+            <div class="section-title position-relative text-center form-animate" style="transition-delay: 0s;">
                 <h1 class="font-secondary display-4">Pozvánka</h1>
                 <i class="far fa-heart text-dark"></i>
             </div>
@@ -341,11 +397,11 @@
                     </div>
                         <form id="quote-form">
                             <div class="form-row">
-                                <div class="form-group col-sm-6">
+                                <div class="form-group col-sm-6 form-animate" style="transition-delay: 0.2s;">
                                     <input type="text" class="form-control bg-secondary border-0 py-4 px-3" 
                                            id="gname" name="user_name" required>
                                 </div>
-                                <div class="form-group col-sm-6">
+                                <div class="form-group col-sm-6 form-animate" style="transition-delay: 0.4s;">
                                     <select class="form-control bg-secondary border-0" 
                                             style="height: 52px;" id="attendance" name="user_attendance" required>
                                         <option value="" disabled selected>Účast</option>
@@ -355,7 +411,7 @@
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group col-sm-6">
+                                <div class="form-group col-sm-6 form-animate" style="transition-delay: 0.6s;">
                                     <select class="form-control bg-secondary border-0" 
                                             style="height: 52px;" id="accommodation" name="user_accommodation" required>
                                         <option value="" disabled selected>Ubytování</option>
@@ -365,11 +421,11 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" 
+                                <textarea class="form-control bg-secondary border-0 py-2 px-3 form-animate" style="transition-delay: 0.8s;" rows="5" 
                                           id="message" name="user_message"></textarea>
                             </div>
                             <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Poslat</button>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5 form-animate" style="transition-delay: 1s;" type="submit">Poslat</button>
                             </div>
                         </form>
                     </div>

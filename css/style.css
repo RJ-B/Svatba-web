@@ -9798,3 +9798,43 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center; /* Zarovná text do středu */
   }
 }
+
+
+/* Skrytí prvků před animací (počáteční stav) */
+.harmonogram-animate {
+  opacity: 0;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  min-height: 250px; /* Zajištění prostoru */
+}
+
+/* Sudé řádky - vyjíždí zleva */
+.harmonogram-animate:nth-child(even) {
+  transform: translateX(-100px);
+}
+
+/* Liché řádky - vyjíždí zprava */
+.harmonogram-animate:nth-child(odd) {
+  transform: translateX(100px);
+}
+
+/* Aktivace animace při zobrazení */
+.harmonogram-animate.harmonogram-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* Skrytí prvků před animací (počáteční stav) */
+.form-animate {
+  opacity: 0;
+  transform: scale(0.8); /* Počáteční velikost 80% */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Aktivace animace při zobrazení */
+.form-animate.form-visible {
+  opacity: 1;
+  transform: scale(1); /* Zvětšení na 100% */
+}
+
+
