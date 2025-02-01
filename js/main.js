@@ -1,9 +1,22 @@
 (function ($) {
     "use strict";
 
-    // Zajistí, že navbar je vidět hned po načtení stránky
     $(document).ready(function () {
-        $('.navbar').css('display', 'flex');
+        $('.navbar').css('display', 'flex'); // Zajistí, že navbar je vidět po načtení stránky
+    
+        let lastScrollTop = 0;
+        $(window).on("scroll", function () {
+            let currentScroll = $(this).scrollTop();
+    
+            if (currentScroll > lastScrollTop) {
+                // Scroll dolů → navbar se schová
+                $(".navbar").fadeOut("fast");
+            } else {
+                // Scroll nahoru → navbar se zobrazí
+                $(".navbar").fadeIn("fast");
+            }
+            lastScrollTop = currentScroll;
+        });
     });
 
     // Smooth scrolling on the navbar links
