@@ -9848,3 +9848,16 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 
+/* Lepší zobrazení mapy */
+.map-container {
+  max-width: 100%; /* Zajistí, že se mapa nebude přetahovat mimo */
+  padding: 10px; /* Přidá trochu místa kolem */
+}
+
+/* Na mobilu */
+@media (max-width: 768px) {
+  .map-container img {
+      width: 90%; /* Omezí šířku na 90% obrazovky */
+      max-width: 400px; /* Nebude příliš velká */
+  }
+}
